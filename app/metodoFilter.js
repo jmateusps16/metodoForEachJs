@@ -10,8 +10,5 @@ function filtrarLivros() {
     let livrosFiltrados = livros.filter(livro => livro.categoria == livroCategoria);
     if (livroCategoria != null && livroCategoria.trim() !== '') {
         exibirOsLivrosNaTela(livrosFiltrados);
-    } else {
-        getBuscaLivrosDaAPI();
     }
-    
 }
